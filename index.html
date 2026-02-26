@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilan de Compétences 2025-2026 | AMOS Nantes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <div class="rg-ball"></div>
+      Bilan AMOS
+    </div>
+    <button class="nav-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projet.html">Projet Pro</a></li>
+      <li><a href="interviews.html">Interviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========================
+       HERO ROLAND GARROS
+       ======================== -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="court-overlay"></div>
+    <div class="hero-vignette"></div>
+
+    <!-- Balles décoratives -->
+    <div class="deco-ball" style="width:130px;height:130px;top:12%;right:22%;opacity:0.1;animation-delay:0s;"></div>
+    <div class="deco-ball" style="width:55px;height:55px;bottom:18%;right:35%;opacity:0.08;animation-delay:3s;"></div>
+    <div class="deco-ball" style="width:30px;height:30px;top:55%;right:18%;opacity:0.12;animation-delay:1.5s;"></div>
+
+    <!-- Contenu principal -->
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span> AMOS Sport Business School — Nantes</span>
+        <div class="hero-eyebrow-line"></div>
+      </div>
+
+      <h1>
+        Bilan de
+        <span class="accent">compétences</span>
+      </h1>
+
+      <p class="hero-school">2ème Année &nbsp;·&nbsp; Bachelor Management du Sport &nbsp;·&nbsp; 2025-2026</p>
+
+      <div class="hero-quote-block">
+        <p>«Je ne crains pas l’échec, je crains de ne pas avoir tout donné.»</p>
+        <cite>— Roger Federer</cite>
+      </div>
+
+      <div class="hero-cta">
+        <a href="parcours.html" class="btn btn-clay">
+          <i class="fas fa-trophy"></i>
+          Découvrir mon parcours
+        </a>
+        <a href="contact.html" class="btn btn-outline-white">
+          <i class="fas fa-envelope"></i>
+          Me contacter
+        </a>
+      </div>
+    </div>
+
+    <!-- Panel score style Roland Garros -->
+    <div class="hero-score-panel">
+      <div class="score-board">
+        <div class="score-label">Promotion</div>
+        <div class="score-num">2026</div>
+        <div class="score-sub">AMOS Nantes</div>
+      </div>
+      <div class="score-board">
+        <div class="score-label">Année</div>
+        <div class="score-num">2ème</div>
+        <div class="score-sub">Bachelor</div>
+      </div>
+    </div>
+
+    <!-- Photo Maxime -->
+    <div class="hero-photo-wrapper">
+      <div class="hero-photo-frame">
+        <img src="Maxime_3.jpg" alt="Maxime — AMOS Sport Business" />
+      </div>
+      <div class="hero-photo-badge">
+        <i class="fas fa-map-marker-alt" style="margin-right:7px;"></i>
+        Maxime — AMOS Nantes
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);text-align:center;color:rgba(255,255,255,0.3);font-family:'Oswald',sans-serif;font-size:0.65rem;letter-spacing:3px;text-transform:uppercase;animation:spin-float 2.5s ease-in-out infinite;">
+      Défiler
+      <i class="fas fa-chevron-down" style="display:block;margin-top:5px;font-size:0.8rem;"></i>
+    </div>
+  </section>
+
+  <!-- ========================
+       QUI SUIS-JE ?
+       ======================== -->
+  <section class="section">  
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <span>Présentation</span>
+          <div class="section-eyebrow-line"></div>
+        </div>
+        <h2>Qui suis-je ?</h2>
+        <div class="section-divider"></div>
+        <p style="max-width:580px;margin:1rem auto 0;"></p>
+      </div>
+
+      <div class="card-grid" style="max-width:950px;margin:0 auto;">
+
+        <div class="card reveal">
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;">
+            <div style="width:48px;height:48px;background:rgba(200,90,27,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--rg-clay);font-size:1.2rem;flex-shrink:0;">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h3 style="font-size:1.1rem;letter-spacing:0.5px;">Identité</h3>
+              <p style="font-size:0.72rem;color:var(--rg-gray);margin:0;">Mon profil en bref</p>
+            </div>
+          </div>
+          <p style="font-size:0.88rem;margin-bottom:0.4rem;"><strong style="color:var(--rg-dark);">Nom :</strong> Gonthier Maxime</p>
+          <p style="font-size:0.88rem;margin-bottom:0.4rem;"><strong style="color:var(--rg-dark);">Formation :</strong> AMOS Sport Business School</p>
+          <p style="font-size:0.88rem;margin-bottom:0.4rem;"><strong style="color:var(--rg-dark);">Niveau :</strong> 2ème année Bachelor</p>
+          <p style="font-size:0.88rem;"><strong style="color:var(--rg-dark);">Localisation :</strong> Nantes, France</p>
+        </div>
+
+        <div class="card reveal">
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;">
+            <div style="width:48px;height:48px;background:rgba(27,77,28,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--rg-green);font-size:1.2rem;flex-shrink:0;">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div>
+              <h3 style="font-size:1.1rem;letter-spacing:0.5px;">Ambition</h3>
+              <p style="font-size:0.72rem;color:var(--rg-gray);margin:0;">Ma vision du futur</p>
+            </div>
+          </div>
+          <p style="font-size:0.88rem;">Construire une carrière dans le <strong style="color:var(--rg-clay);">management sportif</strong>. Contribuer au rayonnement d'une organisation sportive.</p>
+        </div>
+
+        <div class="card reveal">
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;">
+            <div style="width:48px;height:48px;background:rgba(21,21,21,0.07);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--rg-dark);font-size:1.2rem;flex-shrink:0;">
+              <i class="fas fa-star"></i>
+            </div>
+            <div>
+              <h3 style="font-size:1.1rem;letter-spacing:0.5px;">Valeurs</h3>
+              <p style="font-size:0.72rem;color:var(--rg-gray);margin:0;">Mes drivers</p>
+            </div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+            <span style="background:rgba(200,90,27,0.1);color:var(--rg-clay-dark);padding:5px 13px;border-radius:4px;font-family:'Oswald',sans-serif;font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;">XXXXXXX</span>
+            <span style="background:rgba(27,77,28,0.1);color:var(--rg-green);padding:5px 13px;border-radius:4px;font-family:'Oswald',sans-serif;font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;">XXXXXXX</span>
+            <span style="background:rgba(21,21,21,0.07);color:var(--rg-dark);padding:5px 13px;border-radius:4px;font-family:'Oswald',sans-serif;font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;">XXXXXXX</span>
+            <span style="background:rgba(200,90,27,0.1);color:var(--rg-clay-dark);padding:5px 13px;border-radius:4px;font-family:'Oswald',sans-serif;font-size:0.75rem;letter-spacing:1px;text-transform:uppercase;">XXXXXXX</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       NAVIGATION RUBRIQUES
+       ======================== -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <span>Explorer</span>
+          <div class="section-eyebrow-line"></div>
+        </div>
+        <h2>Mon bilan en 5 sets</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="card-grid-3">
+
+        <a href="parcours.html" style="display:block;">
+          <div class="card reveal" style="cursor:pointer;text-align:center;padding:2.5rem 1.5rem;">
+            <div style="width:60px;height:60px;background:var(--rg-clay);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.4rem;color:white;">
+              <i class="fas fa-route"></i>
+            </div>
+            <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Parcours</h3>
+            <p>Mon chemin académique, professionnel et sportif étape par étape.</p>
+          </div>
+        </a>
+
+        <a href="competences.html" style="display:block;">
+          <div class="card reveal" style="cursor:pointer;text-align:center;padding:2.5rem 1.5rem;">
+            <div style="width:60px;height:60px;background:var(--rg-green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.4rem;color:white;">
+              <i class="fas fa-chess"></i>
+            </div>
+            <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Compétences</h3>
+            <p>Savoirs, savoir-faire, savoir-être : l'inventaire complet de  mes capacités.</p>
+          </div>
+        </a>
+
+        <a href="projet.html" style="display:block;">
+          <div class="card reveal" style="cursor:pointer;text-align:center;padding:2.5rem 1.5rem;">
+            <div style="width:60px;height:60px;background:var(--rg-clay);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.4rem;color:white;">
+              <i class="fas fa-binoculars"></i>
+            </div>
+            <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Projet Pro</h3>
+            <p>Métiers visés, entreprises cibles et chiffres clés du marché sport.</p>
+          </div>
+        </a>
+
+        <a href="interviews.html" style="display:block;">
+          <div class="card reveal" style="cursor:pointer;text-align:center;padding:2.5rem 1.5rem;">
+            <div style="width:60px;height:60px;background:var(--rg-green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.4rem;color:white;">
+              <i class="fas fa-microphone"></i>
+            </div>
+            <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Interviews</h3>
+            <p>Rencontres avec 3 professionnels du sport business XXXXX XXXXX, XXXX XXXX et XXXX XXXXXX.</p>
+          </div>
+        </a>
+
+        <a href="contact.html" style="display:block;">
+          <div class="card reveal" style="cursor:pointer;text-align:center;padding:2.5rem 1.5rem;">
+            <div style="width:60px;height:60px;background:var(--rg-clay);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;font-size:1.4rem;color:white;">
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Contact</h3>
+            <p>LinkedIn, CV, formulaire : prenons contact pour la suite.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       CITATION FINALE
+       ======================== -->
+  <section class="section section-dark" style="text-align:center;">
+    <div class="container">
+      <div style="max-width:700px;margin:0 auto;">
+        <div style="font-size:3rem;color:var(--rg-clay);margin-bottom:1.5rem;font-family:'Playfair Display',serif;">"</div>
+        <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1.35rem;color:var(--rg-white);line-height:1.7;margin-bottom:1rem;">
+          « Chaque point est une nouvelle opportunité. »
+        </p>
+        <p style="font-family:'Oswald',sans-serif;font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--rg-clay);">— Andy Murray</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FOOTER
+       ======================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="rg-ball"></div>
+          Bilan AMOS
+        </div>
+        <div class="footer-links-social">
+          <a href="https://www.linkedin.com/in/maxime-gonthier-ab241a32b/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:maximegonthier18@outlook.fr" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="contact.html" class="social-link" title="Contact"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="footer-cv">
+          <a href="#">
+            <i class="fas fa-download"></i>
+            <a href="CV (3).pdf" download> Télécharger mon CV </a>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© Bilan de compétences 2025-2026 — AMOS Nantes</p>
+        <p class="footer-tagline">🎾 Prêt à relever le défi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu mobile
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+  <script src="animations.js"></script>
+</body>
+</html>

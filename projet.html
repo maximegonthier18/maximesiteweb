@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Pro | Bilan AMOS 2025-2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo"><div class="rg-ball"></div> Bilan AMOS</div>
+    <button class="nav-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projet.html" class="active">Projet</a></li>
+      <li><a href="interviews.html">Interviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="tag">Vision 2026-2030</div>
+      <h1>Mon Projet Professionnel</h1>
+      <p>Chiffres clés du marché, métiers visés et entreprises ciblées — ma stratégie d'insertion.</p>
+    </div>
+
+    <!-- KPI MARCHÉ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Chiffres du marché</div>
+          <h2>Le secteur en chiffres</h2>
+          <div class="section-divider"></div>
+          <p>[Secteur visé : ex. Sport Business / Événementiel sportif / Marketing sportif]</p>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card reveal">
+            <div class="kpi-icon"><i class="fas fa-euro-sign"></i></div>
+            <div class="kpi-number">XXMd€</div>
+            <div class="kpi-label">Chiffre d'affaires annuel du secteur</div>
+          </div>
+          <div class="kpi-card reveal">
+            <div class="kpi-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="kpi-number">XXXk</div>
+            <div class="kpi-label">Emplois directs en France</div>
+          </div>
+          <div class="kpi-card reveal">
+            <div class="kpi-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="kpi-number">+XX%</div>
+            <div class="kpi-label">Croissance prévue d'ici 2030</div>
+          </div>
+          <div class="kpi-card reveal">
+            <div class="kpi-icon"><i class="fas fa-trophy"></i></div>
+            <div class="kpi-number">XX</div>
+            <div class="kpi-label">Grands événements sportifs en France/an</div>
+          </div>
+          <div class="kpi-card reveal">
+            <div class="kpi-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="kpi-number">Bac+3</div>
+            <div class="kpi-label">Niveau d'entrée minimum requis</div>
+          </div>
+        </div>
+
+        <!-- Source -->
+        <p style="text-align:center;font-size:0.75rem;color:var(--gris);margin-top:-1rem;">
+          <i class="fas fa-info-circle"></i> Sources : [À compléter — ex. CDES, INSEE, FFF, FFT, KPMG Sport...]
+        </p>
+      </div>
+    </section>
+
+    <!-- MÉTIERS VISÉS -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Débouchés</div>
+          <h2>Métiers visés</h2>
+          <div class="section-divider"></div>
+          <p>Trois métiers identifiés correspondant à mon profil et mes ambitions.</p>
+        </div>
+
+        <div class="card-grid-3">
+
+          <!-- Métier 1 -->
+          <div class="metier-card reveal">
+            <div class="metier-header">
+              <div>
+                <div style="font-size:0.7rem;letter-spacing:2px;color:var(--ocre);text-transform:uppercase;margin-bottom:0.3rem;">Métier #1</div>
+                <h3>[Chargé de marketing sportif]</h3>
+              </div>
+            </div>
+            <div class="metier-body">
+              <div class="metier-row">
+                <i class="fas fa-graduation-cap"></i>
+                <div><strong>Niveau requis :</strong> Bac+3 à Bac+5 (École de commerce, Sport Business)</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-tasks"></i>
+                <div><strong>Missions :</strong> élaborer des stratégies marketing, gérer les campagnes, développer la notoriété d'un club ou d'une marque sportive.</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-euro-sign"></i>
+                <div><strong>Rémunération :</strong> XX 000 € — XX 000 € brut/an</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-tools"></i>
+                <div><strong>Compétences requises :</strong> marketing digital, analyse de données, créativité, gestion de projet.</div>
+              </div>
+              <div class="metier-avantages">
+                <div class="avantage"><i class="fas fa-plus"></i> Créatif & varié</div>
+                <div class="avantage"><i class="fas fa-plus"></i> Fort impact</div>
+                <div class="inconvenient"><i class="fas fa-minus"></i> Concurrentiel</div>
+                <div class="inconvenient"><i class="fas fa-minus"></i> Pression KPIs</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Métier 2 -->
+          <div class="metier-card reveal">
+            <div class="metier-header" style="background:linear-gradient(135deg,var(--ocre-dark) 0%,#8B4513 100%);">
+              <div>
+                <div style="font-size:0.7rem;letter-spacing:2px;color:rgba(255,255,255,0.7);text-transform:uppercase;margin-bottom:0.3rem;">Métier #2</div>
+                <h3>[Responsable événementiel sportif]</h3>
+              </div>
+            </div>
+            <div class="metier-body">
+              <div class="metier-row">
+                <i class="fas fa-graduation-cap"></i>
+                <div><strong>Niveau requis :</strong> Bac+3 à Bac+5 (Événementiel, Sport Management)</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-tasks"></i>
+                <div><strong>Missions :</strong> organisation logistique d'événements sportifs, coordination des prestataires, accueil VIP, communication.</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-euro-sign"></i>
+                <div><strong>Rémunération :</strong> XX 000 € — XX 000 € brut/an</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-tools"></i>
+                <div><strong>Compétences requises :</strong> organisation, gestion du stress, relation partenaires, budget.</div>
+              </div>
+              <div class="metier-avantages">
+                <div class="avantage"><i class="fas fa-plus"></i> Terrain & action</div>
+                <div class="avantage"><i class="fas fa-plus"></i> Très stimulant</div>
+                <div class="inconvenient"><i class="fas fa-minus"></i> Rythme intensif</div>
+                <div class="inconvenient"><i class="fas fa-minus"></i> Déplacements</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Métier 3 -->
+          <div class="metier-card reveal">
+            <div class="metier-header" style="background:linear-gradient(135deg,#2a2a2a 0%,#111 100%);">
+              <div>
+                <div style="font-size:0.7rem;letter-spacing:2px;color:var(--ocre);text-transform:uppercase;margin-bottom:0.3rem;">Métier #3</div>
+                <h3>[Chargé de partenariats sportifs]</h3>
+              </div>
+            </div>
+            <div class="metier-body">
+              <div class="metier-row">
+                <i class="fas fa-graduation-cap"></i>
+                <div><strong>Niveau requis :</strong> Bac+3 à Bac+5 (Commerce, Sport Business)</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-tasks"></i>
+                <div><strong>Missions :</strong> prospection de sponsors, négociation de contrats, suivi des partenariats, reporting d'activation.</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-euro-sign"></i>
+                <div><strong>Rémunération :</strong> XX 000 € — XX 000 € brut/an</div>
+              </div>
+              <div class="metier-row">
+                <i class="fas fa-tools"></i>
+                <div><strong>Compétences requises :</strong> négociation, relationnel, connaissance du marché, rédaction.</div>
+              </div>
+              <div class="metier-avantages">
+                <div class="avantage"><i class="fas fa-plus"></i> Relationnellement riche</div>
+                <div class="avantage"><i class="fas fa-plus"></i> Impact financier</div>
+                <div class="inconvenient"><i class="fas fa-minus"></i> Objectifs chiffrés</div>
+                <div class="inconvenient"><i class="fas fa-minus"></i> Cycles longs</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTREPRISES CIBLÉES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Cibles</div>
+          <h2>Entreprises ciblées</h2>
+          <div class="section-divider"></div>
+          <p>Les organisations dans lesquelles je souhaite construire ma carrière.</p>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;">
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">🏆</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 1]</h4>
+              <p>[Secteur] — [Ville / Pays]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">⚽</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 2]</h4>
+              <p>[Secteur] — [Ville / Pays]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">🎾</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 3]</h4>
+              <p>[Secteur] — [Ville / Pays]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">🏀</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 4]</h4>
+              <p>[Secteur] — [Ville / Pays]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">🏃</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 5]</h4>
+              <p>[Secteur] — [Ville / Pays]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">📺</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 6]</h4>
+              <p>[Secteur médias/droits TV] — [Ville]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">🏟️</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 7]</h4>
+              <p>[Secteur infrastructure] — [Ville]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">💼</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 8]</h4>
+              <p>[Agence sport marketing] — [Ville]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">🌍</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 9]</h4>
+              <p>[Organisation internationale] — [Pays]</p>
+            </div>
+          </div>
+
+          <div class="entreprise-card reveal">
+            <div class="entreprise-logo">⭐</div>
+            <div class="entreprise-info">
+              <h4>[Entreprise 10]</h4>
+              <p>[Secteur] — [Ville]</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Plan d'action -->
+        <div style="margin-top:4rem;background:linear-gradient(135deg,var(--vert) 0%,#1a3d1b 100%);border-radius:12px;padding:2.5rem;color:var(--blanc);">
+          <h3 style="color:var(--ocre);margin-bottom:1.5rem;font-size:1.5rem;">🎯 Mon plan d'action</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;">
+            <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:1.2rem;">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--ocre);margin-bottom:0.5rem;">COURT TERME</div>
+              <p style="font-size:0.85rem;color:rgba(255,255,255,0.8);">Finaliser ma 2ème année, valider mon stage, décrocher une alternance dans [secteur cible].</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:1.2rem;">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--ocre);margin-bottom:0.5rem;">MOYEN TERME</div>
+              <p style="font-size:0.85rem;color:rgba(255,255,255,0.8);">Intégrer un Bachelor ou Master en sport management, multiplier les expériences de terrain et développer mon réseau.</p>
+            </div>
+            <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:1.2rem;">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:var(--ocre);margin-bottom:0.5rem;">LONG TERME</div>
+              <p style="font-size:0.85rem;color:rgba(255,255,255,0.8);">Occuper un poste à responsabilités dans [domaine] au sein d'une structure sportive de renom.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="rg-ball"></div> Bilan AMOS</div>
+        <div class="footer-links-social">
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:maximegonthier18@outlook.fr" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="contact.html" class="social-link"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="footer-cv"><a href="CV (3).pdf" download><i class="fas fa-download"></i> Télécharger mon CV</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© Bilan de compétences 2025-2026 — AMOS Nantes</p>
+        <p class="footer-tagline">🎾 Prêt à relever le défi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+  </script>
+  <script src="animations.js"></script>
+</body>
+</html>

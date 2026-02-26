@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Bilan AMOS 2025-2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .contact-link-card:nth-child(1) .icon { background: rgba(10,102,194,0.12); color: #0a66c2; }
+    .contact-link-card:nth-child(2) .icon { background: rgba(183,110,46,0.12); color: var(--ocre-dark); }
+    .contact-link-card:nth-child(3) .icon { background: rgba(44,95,45,0.12); color: var(--vert); }
+
+    .form-submit-msg {
+      display: none;
+      background: rgba(44,95,45,0.1);
+      color: var(--vert);
+      border: 1px solid rgba(44,95,45,0.3);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo"><div class="rg-ball"></div> Bilan AMOS</div>
+    <button class="nav-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="projet.html">Projet</a></li>
+      <li><a href="interviews.html">Interviews</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="tag">Let's connect</div>
+      <h1>Restons Connectés</h1>
+      <p>🎾 Prêt pour un échange ? Je suis disponible pour toute opportunité ou collaboration.</p>
+    </div>
+
+    <!-- LIENS DE CONTACT -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-tag">Me retrouver</div>
+          <h2>Mes coordonnées</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-links" style="max-width:700px;margin:0 auto 4rem;">
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/maxime-gonthier-ab241a32b/" target="_blank" class="contact-link-card reveal">
+            <div class="icon"><i class="fab fa-linkedin-in" style="font-size:1.6rem;"></i></div>
+            <h4>LinkedIn</h4>
+            <p>Suivez mon profil & actualités professionnelles</p>
+            <div style="margin-top:0.8rem;font-size:0.78rem;font-weight:600;color:var(--ocre-dark);">
+              Voir le profil <i class="fas fa-external-link-alt" style="font-size:0.7rem;"></i>
+            </div>
+          </a>
+
+          <!-- CV -->
+          <a href="CV (3).pdf" download class="contact-link-card reveal">
+            <div class="icon"><i class="fas fa-file-pdf" style="font-size:1.6rem;"></i></div>
+            <h4>Mon CV</h4>
+            <p>Téléchargez mon curriculum vitæ complet au format PDF</p>
+            <div style="margin-top:0.8rem;font-size:0.78rem;font-weight:600;color:var(--ocre-dark);">
+              Télécharger <i class="fas fa-download" style="font-size:0.7rem;"></i>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:maximegonthier18@outlook.fr" class="contact-link-card reveal">
+            <div class="icon"><i class="fas fa-envelope" style="font-size:1.6rem;"></i></div>
+            <h4>Email</h4>
+            <p>Pour toute question, proposition ou prise de contact directe</p>
+            <div style="margin-top:0.8rem;font-size:0.78rem;font-weight:600;color:var(--ocre-dark);">
+              Envoyer un mail <i class="fas fa-arrow-right" style="font-size:0.7rem;"></i>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- FORMULAIRE -->
+        <div class="section-header" style="margin-bottom:2rem;">
+          <div class="section-tag">Formulaire</div>
+          <h2>Écrivez-moi</h2>
+          <div class="section-divider"></div>
+          <p>Un message, une question, une proposition ? Je vous réponds rapidement.</p>
+        </div>
+
+        <div class="contact-form reveal">
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-group">
+                <label for="prenom"><i class="fas fa-user" style="margin-right:5px;color:var(--ocre-dark);"></i>Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+              </div>
+              <div class="form-group">
+                <label for="nom"><i class="fas fa-user" style="margin-right:5px;color:var(--ocre-dark);"></i>Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope" style="margin-right:5px;color:var(--ocre-dark);"></i>Email</label>
+              <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="objet"><i class="fas fa-tag" style="margin-right:5px;color:var(--ocre-dark);"></i>Objet</label>
+              <input type="text" id="objet" name="objet" placeholder="Ex: Proposition de stage, collaboration..." />
+            </div>
+
+            <div class="form-group">
+              <label for="message"><i class="fas fa-comment" style="margin-right:5px;color:var(--ocre-dark);"></i>Message</label>
+              <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.9rem;">
+              <i class="fas fa-paper-plane"></i>
+              Envoyer le message
+            </button>
+
+            <div class="form-submit-msg" id="successMsg">
+              <i class="fas fa-check-circle" style="margin-right:8px;"></i>
+              Merci pour votre message ! Je vous répondrai dans les plus brefs délais. 🎾
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-dark" style="text-align:center;padding:60px 2rem;">
+      <div class="container">
+        <div style="max-width:600px;margin:0 auto;">
+          <!-- Balle déco -->
+          <div style="width:60px;height:60px;background:var(--ocre);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:1.5rem;">🎾</div>
+
+          <h2 style="color:var(--blanc);margin-bottom:1rem;">Prêt pour un échange ?</h2>
+          <p style="color:#aaa;max-width:500px;margin:0 auto 2rem;">Que vous soyez recruteur, professionnel du secteur, ou simplement curieux de mon parcours — je suis toujours partant pour un échange enrichissant.</p>
+
+          <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+            <a href="https://www.linkedin.com/in/maxime-gonthier-ab241a32b/" target="_blank" class="btn btn-primary">
+              <i class="fab fa-linkedin-in"></i>
+              Me suivre sur LinkedIn
+            </a>
+            <a href="CV (3).pdf" download class="btn btn-outline">
+              <i class="fas fa-download"></i>
+              Télécharger mon CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="rg-ball"></div> Bilan AMOS</div>
+        <div class="footer-links-social">
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:contact@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="contact.html" class="social-link"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="footer-cv"><a href="CV (3).pdf" download><i class="fas fa-download"></i> Télécharger mon CV</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© Bilan de compétences 2025-2026 — AMOS Nantes</p>
+        <p class="footer-tagline">🎾 Prêt à relever le défi</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+
+    // Gestion du formulaire (simulation)
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.querySelector('#contactForm button[type="submit"]');
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        document.getElementById('successMsg').style.display = 'block';
+        document.getElementById('contactForm').reset();
+        btn.innerHTML = '<i class="fas fa-check"></i> Message envoyé !';
+        btn.style.background = 'var(--vert)';
+        setTimeout(() => {
+          btn.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer le message';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 4000);
+      }, 1500);
+    }
+
+    // Responsive form grid
+    function adjustFormGrid() {
+      const grid = document.querySelector('.contact-form form > div');
+      if (grid && window.innerWidth < 480) {
+        grid.style.gridTemplateColumns = '1fr';
+      } else if (grid) {
+        grid.style.gridTemplateColumns = '1fr 1fr';
+      }
+    }
+    adjustFormGrid();
+    window.addEventListener('resize', adjustFormGrid);
+  </script>
+  <script src="animations.js"></script>
+</body>
+</html>
